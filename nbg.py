@@ -17,7 +17,7 @@ if not NBG_PRIMARY_KEY or not NBG_SECONDARY_KEY:
     message += 'Visit https://github.com/nationalbankofgreece/open-bank-python#configuration to find out how.\n'
     raise Exception(message)
 
-NBG_API_ROOT = 'https://nbgdemo.azure-api.net/testnodeapi'
+NBG_API_ROOT = 'https://nbgdemo.azure-api.net/nodeopenapi'
 
 HEADERS = {
     'Content-Type': 'application/json',
