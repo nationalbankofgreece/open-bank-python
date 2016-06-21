@@ -4,6 +4,14 @@ This repository contains examples for accessing the API of the National Bank of 
 
 More information on the NBG Open Bank API can be found at https://nbgdemo.portal.azure-api.net/docs/services/570d09697a995a13c499072f/
 
+## Installation
+
+To use the `nbg` package you must install its requirements using the following command
+
+```
+pip install -r requirements.txt
+```
+
 ## Configuration
 
 To configure the NBG Open Bank API Python client create a file with `.env` as its name in the root directory of your project. Add your subscription primary and secondary keys in the following format in this file:
@@ -30,7 +38,7 @@ Below you can find several examples on how to use the NBG API with the `nbg` lib
 ```python
 import nbg
 
-response = nbg.get('/api/atms/list')
+response = nbg.get('/api/banks')
 
 print response.json()
 ```
